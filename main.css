@@ -1,0 +1,256 @@
+/* ---------- DEFAULTS ---------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.4rem;
+  font-family: sans-serif, lato,;
+ 
+}
+
+body {
+  background-color: #001933;
+  
+}
+
+img {
+  width: 100%;
+  align: center;
+  border: 5px solid #001226;
+}
+
+.wrapper{
+  width: 95%;
+  margin: auto;
+  background-color: #001933;
+}
+
+.footer{
+  background-color: #001226;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+}
+
+.masthead{
+  background: url(http://lorempixel.com/1920/450/cats/) no-repeat 50% 50%;
+  align: center;
+  line-height: 15rem;  
+  border: 8px solid #001226;
+  
+  
+  
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav a,
+nav a:visited{
+  color: #0058BF;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.mainnav li{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #001226;
+  line-height: 1.9em;
+  
+}
+
+.mainnav a:hover,
+.mainnav a:active{
+  color: orange;
+  background-color: black;
+}
+
+/* ----------- TEXT ---------- */
+
+h1 {
+  color: white;
+  font-size: 2em;
+  text-shadow: 6px 6px 10px black;
+  text-align: center;
+}
+
+h2 {
+  color: #495C73;
+  font-size: 1.424em;
+  margin: 1.5em 0em 0.5em;
+  text-align: center;
+
+}
+
+h3 {
+  color: #495C73;
+  font-size: 1.266em;
+  padding: 0.5em;
+  text-align:center;
+}
+
+p {
+  color: white;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+/* ----- BETWEEN 35EM AND 60EM --------- */
+
+@media all and (min-width: 35em) and (max-width: 60em) {
+  
+  /* ----- NAVIGATION 1 ------ */
+  .mainnav li{
+    float:left;
+    width: 25%;
+    font-size: 1.1em;
+    line-height: 2.3em;
+    
+  }
+  
+  .wrapper{
+  width: 90%;
+  margin: auto;
+  background-color: #001933;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  .primary{
+    width: 63%;
+    display: inline-block;
+    float:left;
+  }
+  
+  .side{
+    width: 36%;
+    display: inline-block;
+        
+  }
+  
+  .side p{
+    font-size: 0.9rem;
+  }
+  
+  /* ------ TEXT --------- */
+  
+  h1{
+   text-align: center;
+   font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 1.9rem;
+    padding: 1.2rem 1.3rem;
+    margin: 0;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+    padding: 1.2rem;
+  }
+  
+  p{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+}
+
+/* ------ OVER 60EM -------------- */
+
+@media all and (min-width: 60em) {
+  .mainnav{
+    float: left;
+    width: 25%;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin: 2rem 0rem;
+    font-size: 1.1rem;
+    background-image: url("http://lorempixel.com/440/700/cats/");
+    border: 10px solid #001226;
+    background-height: 700px;
+   
+  }
+  
+  div {
+    
+  }
+  
+  img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  
+  /* ------- TEXT -------------*/
+  
+  h1{
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  h2{
+    font-size: 2.1rem;
+    text-align:center;
+    margin: 0;
+    padding: 1rem;
+    font-weight: bolder;
+    
+  }
+  
+  h3{
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align:center;
+    
+  }
+  
+  p{
+    font-size: 1.1rem;
+    padding: 1rem;
+    font
+  }
+  
+  .wrapper{
+  width: 95%;
+  margin: auto;
+  background-color: #001933;
+    
+  
+  }
+  
+  .content{
+    width: 50%;
+    display: inline-block;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    float: left;
+    padding: 2em 0em;
+  }
+  
+  .side{
+    width: 24%;
+    display: inline-block;
+    max-width: 1600px;
+    padding: 2em 0em;
+    
+  }
+  
+  .side p{
+    font-size: 0.75rem;
+  }
+  
+}
